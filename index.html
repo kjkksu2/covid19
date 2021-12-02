@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+    <title>COVID-19</title>
+  </head>
+  <body>
+    <header>
+      <h2 class="brand">
+        <span>Mask</span>
+        <i class="fas fa-head-side-mask"></i>
+      </h2>
+      <div class="menu-bar">
+        <i class="fas fa-bars menu active"></i>
+        <i class="fas fa-times menu"></i>
+      </div>
+      <div class="navigation">
+        <div class="navigation-items">
+          <a href="#covid19">COVID-19란</a>
+          <a href="#importance">중요성</a>
+          <a href="#notice">유의 사항</a>
+          <a href="#vaccine">백신</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="home" id="home">
+      <div class="home__content">
+        <img src="images/doctor.png" />
+        <div class="bubble">
+          <p class="introduction">
+            안녕하세요. <br />
+            저는 <span>닥터 킴</span>입니다. <br />
+            코로나 시대를 사는 우리들에게 <span>마스크</span>는 매우 중요합니다.
+            <br/ > 여러분들과 그 이유에 대해 알아볼까요?
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="covid19" id="covid19">
+      <div class="title reveal">COVID-19란</div>
+      <div class="covid19__content">
+        <img src="images/covid-worldMap.jpg" />
+        <div class="text">
+          <ul>
+            <li class="reveal">
+              <span>개요</span>
+              <p>
+                &emsp; ▪ 사람과 다양한 동물로부터 감염될 수 있는 바이러스로서
+                유전자 크기 27~32kb의 RNA 바이러스
+              </p>
+            </li>
+            <li class="reveal">
+              <span>분류</span>
+              <p>
+                &emsp; ▪ 코로나 바이러스과에는 4개의 속(알파, 베타, 감마,
+                델타)이 있음 <br />
+                &emsp; &emsp; - 알파 · 베타 : 사람과 동물에게 감염<br />
+                &emsp; &emsp; - 감마 · 델타 : 동물에게
+              </p>
+            </li>
+            <li class="reveal">
+              <span>전파 경로</span>
+              <p>
+                &emsp; ▪ 주요인은
+                <span id="highlight">감염자의 호흡기 침방울(비말)</span>에 의해
+                전파된다. 주로 <span id="highlight">밀접접촉(2m 이내)</span>에서
+                발생한다. <br />
+                &emsp; ▪ 비말 이외, 표면 접촉이나 공기 등을 통해서도 전파가
+                가능하지만, 이는 특정 환경에서 제한적으로 전파되는 것으로 알려져
+                있다.
+              </p>
+            </li>
+            <li class="reveal">
+              <span>잠복기</span>
+              <p>&emsp; ▪ 1~14일(평균 5~7일)</p>
+            </li>
+            <li class="reveal">
+              <span>진단 기준</span>
+              <p>
+                &emsp; ▪ 검사기준에 따라 코로나19 감염이 확인된 사람. 검사기준은
+                코로나19 유전자(PCR) 검출 를 통해 이루어진다.
+              </p>
+            </li>
+            <li class="reveal">
+              <span>증상</span>
+              <p>
+                &emsp; ▪ 주요 증상으로는
+                <span id="highlight">발열(37.5℃ 이상), 기침</span>, 호흡곤란,
+                오한, 근육통, 두통, 인후통, 후각·미 각소실이 있다. <br />
+                &emsp; ▪ 그 외에 피로, 식욕감소, 가래, 소화기증상(오심, 구토,
+                설사 등), 혼돈, 어지러움, 콧물이 나 코막힘, 객혈, 흉통, 결막염,
+                피부 증상 등이 다양하게 나타남.
+              </p>
+            </li>
+            <li class="reveal">
+              <span>치료</span>
+              <p>
+                &emsp; ▪ 특이치료제는 없으며 증상에 따른 해열제, 수액공급,
+                진해제 등 <span id="highlight">대증치료</span>
+              </p>
+            </li>
+            <li class="reveal">
+              <span>치명률</span>
+              <p>&emsp; ▪ 전세계 치명률은 0.00%~1.63%</p>
+            </li>
+            <li class="reveal">
+              <span>예방</span>
+              <p>
+                &emsp; ▪ <span id="highlight">백신</span> <br />
+                &emsp; ▪ <span id="highlight">마스크 착용</span> <br />
+                &emsp; ▪ 올바른 손씻기 <br />
+                &emsp; ▪ 주위 환경을 자주 소독하고 환기하기
+              </p>
+            </li>
+          </ul>
+          <div>
+            <a class="reveal" href="http://ncov.mohw.go.kr/baroView.do">
+              [출처 : 코로나바이러스감염증-19]
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container importance-background" id="importance">
+      <div class="title reveal">중요성</div>
+      <div class="content">
+        <div class="content__row">
+          <div class="text importance-text">
+            <h2 class="reveal">비말의 거리</h2>
+            <p class="reveal">
+              완전혼합기반 Wells-Riley 모델에 따르면, 큰 비말형태의 에오로졸
+              전파를 고려할 때는 1.6 ~ 3.0m가 안전한 사회적 거리이며 모든 비말을
+              고려할 경우 조용한 공기 환경에서 안전한 거리 두기는 8.2m까지 될 수
+              있음을 시사했다.
+            </p>
+            <br />
+            <p class="reveal">
+              코로나의 주 감염요인이 비말과 밀접접촉(2m 이내)이라는 것을
+              감안하면, 마스크를 쓰지 않을 때 감염율이 높아진다는 결론을 도출할
+              수 있다.
+            </p>
+          </div>
+          <div class="image reveal">
+            <img src="images/비말.png" />
+            <div>
+              <a
+                class="importance-anchor"
+                href="https://www.medric.or.kr/Controls/Sub.aspx?d=03&s=02&s2=01&g=TENDENCY&c&m=VIEW&i=3416"
+              >
+                [출처 : 국가지정 의과학연구정보센터]
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="content__row importance-row">
+          <div class="text importance-text">
+            <h2 class="reveal">지역 확산 감소</h2>
+            <p class="reveal">
+              미국 스탠퍼드대학과 예일대학, 비영리 빈곤퇴치기구(Innovations for
+              Poverty Action·IPA) 공동 연구팀은 방글라데시 지방자치구 600여 곳의
+              34만여 명을 대상으로 연구를 진행했다.
+            </p>
+            <br />
+            <p class="reveal">
+              연구팀은 2020년 11월부터 2021년 1월까지 8주간 지역 조사관들을
+              동원해 실제현장 에서 마스크 착용 여부를 점검했다.
+            </p>
+            <br />
+            <p class="reveal">
+              연구 결과, 마스크를 착용하지 않은 마을에 비해 어떤 유형의 마스크든
+              착용을 한 마을에 서는 코로나19 발생 건수가 9% 적은 것으로
+              나타났다.
+            </p>
+            <br />
+            <p class="reveal">
+              특히 마스크는 나이 든 사람들에게 가장 효과적인 것으로 나타났다.
+              외과용 마스크를 착 용한 50~60세 사람들은 마스크를 착용하지 않은
+              동년배들에 비해 코로나19 확진 비율이 23% 적었다. 60세 이상
+              고령자의 경우 코로나19 위험 감소율이 35%로 더 컸다.
+            </p>
+            <div class="reveal">
+              <a href="#"> [출처 : 코메디닷컴] </a>
+            </div>
+          </div>
+          <div class="graph-container reveal">
+            <h4>마스크 착용 시 위험 감소율</h4>
+            <div class="graph">
+              <div class="graph-element">
+                <span>마을</span>
+                <span>9%</span>
+              </div>
+              <div class="graph-image">
+                <span class="village"></span>
+              </div>
+            </div>
+            <div class="graph">
+              <div class="graph-element">
+                <span>50~60세</span>
+                <span>23%</span>
+              </div>
+              <div class="graph-image">
+                <span class="elder50"></span>
+              </div>
+            </div>
+            <div class="graph">
+              <div class="graph-element">
+                <span>60세 이상</span>
+                <span>35%</span>
+              </div>
+              <div class="graph-image">
+                <span class="elder60"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container notice-background" id="notice">
+      <div class="title reveal">유의 사항</div>
+      <div class="content">
+        <div class="content__row">
+          <div class="text notice-text">
+            <h2 class="reveal">중요한 건 “밀착"</h2>
+            <p class="reveal">
+              마스크 착용 방법에 대한 국내 연구결과가 최근 Journal of Korean
+              medical science 를 통해 공개됐다.
+            </p>
+            <br />
+            <p class="reveal">
+              연구결과에 따르면, 마스크는 디자인보다 마스크 클립 사용 여부에
+              따라 보호 효과가 달 라졌다. 마스크 클립을 사용하면 사용하지 않을
+              때보다 바이러스 차단율이 약 5배 높아졌다.
+            </p>
+            <br />
+            <p class="reveal">
+              즉, 얼마나 마스크를 얼굴에 잘 밀착시켜서 코와 입을 보호했는지에
+              따라 차단율의 결과가 달라졌다.
+            </p>
+            <br />
+            <p class="reveal">
+              몇몇 사람들이 얼굴에 제대로 밀착시키지 않고 턱스크를 하고 다니는데
+              이는 마스크를 하지 않은 것과 같다. 콧속의 털이 있는 비강
+              섬모세포를 통해 감염과 증식이 일어날 수 있기 때문이다.
+            </p>
+          </div>
+          <div class="image reveal">
+            <img src="images/마스크밀착.png" />
+            <div>
+              <a
+                class="notice-anchor"
+                href="https://health.chosun.com/site/data/html_dir/2021/07/21/2021072102038.html"
+              >
+                [출처 : 헬스조선]
+              </a>
+            </div>
+            <iframe
+              class="notice-video"
+              src="https://www.youtube.com/embed/2djCyLQwWvo"
+              title="YouTube video player"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <div class="content__row">
+          <div class="text" id="notice-text">
+            <h2 class="reveal">어떤 마스크가 좋은가?</h2>
+            <p class="reveal">권장하는 마스크는 그림과 같다.</p>
+            <br />
+            <p class="reveal">
+              권장하는 마스크의 공통점은 비말을 잘 막고, 숨쉬기 괜찮으며, 얼굴과
+              잘 밀착되는 마스크이다.
+            </p>
+          </div>
+          <div class="image reveal" id="notice-image">
+            <img src="images/마스크 유의사항.png" />
+            <div>
+              <a
+                class="notice-anchor"
+                href="https://korean.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/cloth-face-cover-guidance.html"
+              >
+                [출처 : CDC]
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container vaccine-background" id="vaccine">
+      <div class="title reveal">백신</div>
+      <div class="content">
+        <div class="content__row">
+          <div class="text vaccine-text">
+            <h2 class="reveal">백신은 치료제가 아니다</h2>
+            <p class="reveal">
+              백신은 건강한 사람이 건강을 지키기 위해 만든 것이고, 치료제는 이미
+              바이러스에 감염된 환자가 회복될 수 있도록 돕는 것이다. 즉, 백신은
+              ‘사전 예방’이고, 치료제는 ‘사후 치료’이다. 현재 여러 가지 백신은
+              있지만 치료제는 없다.
+            </p>
+            <br />
+            <p class="reveal">
+              정재훈 가천대 의대 예방의학과 교수는 "백신은 모든 코로나19 감염을
+              예방해주지 않으므로 2회 접종을 마치더라도 감염 위험은 항상
+              존재한다."며 "접종 후에도 사회적 거리 두기, 마스크 쓰기는 지켜야
+              한다"고 강조했다. <br />
+              천은미 이대목동병원 호흡기내과 교수는 “백신은 감염을 100% 예방하는
+              게 아니므로 마스크를 잘 끼고 손씻기 등 방역수칙을 철저히 지키는 수
+              밖에 없다.”고 말했다.
+            </p>
+            <br />
+            <p class="reveal">
+              영국은 지난 7월 19일 마스크 착용이나 거리두기 등 방역 규제
+              대부분을 풀었는데, 백신을 맞지 않은 아이들 위주로 바이러스가
+              퍼지면서 감염자 수가 늘어난 것이다. 이 가운데 찬바람까지 불기
+              시작하자 의료계에서는 마스크 착용, 재택근무 권고 등을 주장하는
+              목소리도 나왔다.
+            </p>
+          </div>
+          <div class="image reveal">
+            <img src="images/영국 백신.jpg" />
+            <div>
+              <a
+                class="vaccine-anchor"
+                href="https://www.mk.co.kr/news/it/view/2021/03/251629/"
+              >
+                [출처 : 매일경제]
+              </a>
+            </div>
+            <div>
+              <a
+                class="vaccine-anchor"
+                href="https://www.seoul.co.kr/news/newsView.php?id=20211022500047"
+              >
+                [출처 : 서울신문]
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="content__row">
+          <div class="text vaccine-text">
+            <h2 class="reveal">위드코로나</h2>
+            <p class="reveal">
+              위드코로나 이전, 방역 목표는 ‘코로나 박멸, 팬데믹 종식, 집단면역
+              형성’이었다. 이를 위해 ‘봉쇄 조치’를 시행했지만, 변이 바이러스의
+              등장으로 실패하였다. 그런데 경제 활동 을 통제하면서 경제적인
+              피해가 한계에 다다랐다. 그러므로 대부분의 국가는 위드코로나
+              정책으로 방향을 잡을 것이다.
+            </p>
+            <br />
+            <p class="reveal">
+              유럽은 한국보다 위드코로나를 먼저 시행했는데 지금 상황이 좋지
+              않다. 전 세계 사망자 의 절반이 유럽에서 나온다. 여러 나라들 중에서
+              한국과 인구수가 비슷한 영국을 보자. 영국은 백신을 맞고, 봉쇄조치가
+              해제되면서 위드코로나를 시행하자마자 사람들이 마스크 를 벗어던지고
+              돌아다녔다. 이와 대조적으로 한국은 사람들이 백신을 맞았더라도
+              마스크 를 쓰고 외부활동을 하였다. 그 결과, 한국은 코로나 발병률이
+              8%인데 반해 영국은 14% 이다.
+            </p>
+          </div>
+          <div class="image vaccine-image reveal">
+            <img src="images/영국 위드코로나.jpg" />
+            <div>
+              <a class="vaccine-anchor" href="https://coronaboard.kr/">
+                [출처 : 코로나19 실시간 현황판]
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <span>mask</span>
+      <p>
+        Copyright 2021 &copy; <span>마스크를 생활화하자!</span> All rights
+        reserved.
+      </p>
+    </footer>
+  </body>
+  <script src="app.js"></script>
+</html>
